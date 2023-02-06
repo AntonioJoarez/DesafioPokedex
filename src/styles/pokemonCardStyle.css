@@ -5,7 +5,7 @@ body {
   max-width: 450px;
   height: 400px;
   width: 100%;
-    border-radius: 10px;
+  border-radius: 10px;
 }
 .zoom {
   overflow: hidden;

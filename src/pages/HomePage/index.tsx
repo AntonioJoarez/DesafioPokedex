@@ -41,7 +41,7 @@ export const HomePage = () => {
   return (
     <>
       <SearchrBar handleChangeSearch={handleChangeSearch} />
-      <button onClick={handleTeamPage}>Team</button>
+      <button className="teamButton" onClick={handleTeamPage}>Team</button>
       <div className="card-container">
         {pokemonsStore.pokemonsFilterBySearch
           .slice(0, pokemonsStore.page)
@@ -58,7 +58,7 @@ export const HomePage = () => {
             );
           })}
       </div>
-      <button onClick={renderMorePokemons}>Render More</button>
+      <button className="renderMore" onClick={renderMorePokemons}>Render More</button>
     </>
   );
 };

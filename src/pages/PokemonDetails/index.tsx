@@ -3,6 +3,7 @@ import { useContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { PokemonsContext } from "../../contexts/PokemonsContext";
 import usePokemonsStore from "../../store/pokemons";
+import "/src/styles/pokemonDetailsStyle.css";
 
 export const PokemonsDetails = () => {
   const [evolutionResponse, setEvolutionResponse] = useState();
@@ -26,16 +27,16 @@ export const PokemonsDetails = () => {
   return (
     <>
       <button onClick={handleBack}>Voltar</button>
-      <div className="pokemonCardContainer" style={{ marginTop: "100px" }}>
-        <div className="pokemonCard">
-          <div className="background" style={{ background: colorPokemon }}>
-            <div className="zoom">
+      <div className="pokemonCardContainerDetails" >
+        <div className="pokemonCardDetails">
+          <div className="backgroundDetails">
+            <div className="zoomDetails">
               <img src={data.image} alt="" />
             </div>
           </div>
         </div>
-        <div className="content">
-          <h1 className="pokemonName">{data.name}</h1>
+        <div className="contentDetails">
+          <h1 className="pokemonNameDetails">{data.name}</h1>
           <h3>weight: {data.weight}</h3>
           {data.stats.map((value: any) => (
             <div style={{ display: "flex", flexDirection: "column" }}>
