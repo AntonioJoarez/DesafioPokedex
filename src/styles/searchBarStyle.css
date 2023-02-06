@@ -1,0 +1,35 @@
+.search-box {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    background: black;
+    height: 40px;
+    padding: 10px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: #f0f5fb;
+    font-size: 16px;
+    line-height: 40px;
+    width: 0;
+    transition: 0.5s;
+}
+.search-btn {
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-box:hover > .search-txt {
+    width: 240px;
+}
