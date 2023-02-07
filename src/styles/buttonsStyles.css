@@ -2,7 +2,8 @@
   .renderMore {
     background-color:  #2182e4;
     position: relative;
-    left: 47%;
+    border-radius: 10px;
+    left: 44%;
     border: none;
     color: white;
     padding: 18px 30px;
@@ -12,18 +13,51 @@
     font-weight: bold;
   }
   .teamButton {
-    background-color:  #2182e4;
+    background: none;
+    color:  #2182e4;
     position: relative;
     left: 90%;
+    border: none;
+    padding: 18px 30px;
+    text-align: center;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: bold;
+    top: 20px;
+  }
+  .buttonBackTeam {
+    background: none;
+    color:  #2182e4;
+    position: relative;
+    left: 90%;
+    border: none;
+    padding: 18px 30px;
+    text-align: center;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: bold;
+    top: 20px;
+  }
+  .buttonBack {
+    background: none;
+    position: relative;
+    left: 0%;
     border: none;
     color: white;
     padding: 18px 30px;
     text-align: center;
     display: inline-block;
-    font-size: 16px;
+    font-size: 25px;
     font-weight: bold;
     top: 20px;
   }
-  button:hover {
+  
+  .teamButton:hover {
+    color: #1d4ad1;
+  }
+  .renderMore:hover {
     background-color: #1d4ad1;
+  }
+  .buttonBack:hover {
+    color: black;
   }

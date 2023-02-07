@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { PokemonsContext } from "../../contexts/PokemonsContext";
 import usePokemonsStore from "../../store/pokemons";
 import "/src/styles/pokemonDetailsStyle.css";
+import "/src/styles/buttonsStyles.css";
 
 export const PokemonsDetails = () => {
   const [evolutionResponse, setEvolutionResponse] = useState();
@@ -29,19 +30,19 @@ export const PokemonsDetails = () => {
       <div className="pokemonCardContainerDetails" >
         <div className="pokemonCardDetails">
           <div className="backgroundDetails">
-            <button onClick={handleBack}>Voltar</button>
+            <button className="buttonBack" onClick={handleBack}>Voltar</button>
             <div className="zoomDetails">
               <img src={data.image} alt="" />
-            </div>
-            <h1 className="pokemonNameDetails">{data.name}</h1>
+              <h1 className="pokemonNameDetails">{data.name}</h1>
             <h2>weight: {data.weight}</h2>
              {data.stats.map((value: any) => (
             <div style={{ display: "flex", flexDirection: "column" }}>
               <h2>{value.stat.name}</h2>
-              <h2>base:{value.base_stat}</h2>
-              <h2>effort:{value.effort}</h2>
+              <h3>base:{value.base_stat}</h3>
+              <h3>effort:{value.effort}</h3>
             </div>
           ))}
+            </div>
           </div>
         </div>
       

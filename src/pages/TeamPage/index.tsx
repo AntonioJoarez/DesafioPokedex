@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { PokemonCard } from "../../components/PokemonCard";
 import usePokemonsStore from "../../store/pokemons";
 import usePokemonsTeamStore from "../../store/pokemonsTeam";
+import "/src/styles/buttonsStyles.css";
 
 export const TeamPage = () => {
   const pokemonstTeamStore = usePokemonsTeamStore();
@@ -13,7 +14,7 @@ export const TeamPage = () => {
   }
   return (
     <>
-      <button onClick={handleBack}>Voltar</button>
+      <button className="buttonBackTeam" onClick={handleBack}>Voltar</button>
 
       <div className="card-container">
         {pokemonstTeamStore.team?.map((value: any, index: number) => {

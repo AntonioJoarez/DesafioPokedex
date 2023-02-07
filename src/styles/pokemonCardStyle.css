@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Pokemon';
+  src: url('../fonts/Pokemon Hollow.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Pokemon2';
+  src: url('../fonts/Pokemon\ Solid.ttf.ttf') format('truetype');
+}
 body {
   font-family: sans-serif;
 }
@@ -50,14 +58,11 @@ body {
 .buttonFavorite {
   background: none;
   border: none;
-  hover: {
-    opacity: 0.5;
-  }
 }
 .pokemonName {
+  font-family: Pokemon;
   text-align: center;
   font-size: 22px;
-  font-weight: bold;
   padding: 1px;
   margin-top: -50px;
   margin-left: 90px;
@@ -76,7 +81,7 @@ body {
   display: block;
   text-align: center;
   position: relative;
-  top: -350px;
+  top: -390px;
 }
 .content {
   background-color: white;
