@@ -26,31 +26,26 @@ export const PokemonsDetails = () => {
   }
   return (
     <>
-      <button onClick={handleBack}>Voltar</button>
       <div className="pokemonCardContainerDetails" >
         <div className="pokemonCardDetails">
           <div className="backgroundDetails">
+            <button onClick={handleBack}>Voltar</button>
             <div className="zoomDetails">
               <img src={data.image} alt="" />
             </div>
-          </div>
-        </div>
-        <div className="contentDetails">
-          <h1 className="pokemonNameDetails">{data.name}</h1>
-          <h3>weight: {data.weight}</h3>
-          {data.stats.map((value: any) => (
+            <h1 className="pokemonNameDetails">{data.name}</h1>
+            <h2>weight: {data.weight}</h2>
+             {data.stats.map((value: any) => (
             <div style={{ display: "flex", flexDirection: "column" }}>
-              <h3>{value.stat.name}</h3>
-              <span>base:{value.base_stat}</span>
-              <span>effort:{value.effort}</span>
+              <h2>{value.stat.name}</h2>
+              <h2>base:{value.base_stat}</h2>
+              <h2>effort:{value.effort}</h2>
             </div>
           ))}
-          <div style={{ display: "flex", gap: "10px" }}>
-          
-            
           </div>
         </div>
-      </div>
+      
+        </div>
     </>
   );
 };

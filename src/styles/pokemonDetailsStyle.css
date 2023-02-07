@@ -3,17 +3,17 @@ body {
   }
   .pokemonCardContainerDetails {
     max-width: 100%;
-    height: 500px;
-    width: 100%;
-    border-radius: 10px;
-    margin-top: "20px"
+    height: 100%;
   }
   .zoomDetails {
     overflow: hidden;
+    width: 100%;
+    height: 100%;
   }
   .zoomDetails img {
-    width: 600px;
-    height: 500px;
+    width: 300px;
+    height: 300px;
+    margin-top: 20%;
     -moz-transition: all 0.3s;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
@@ -29,7 +29,7 @@ body {
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     width: "600";
-    height: "500px";
+    height: 100%;
   }
   .card-containerDetails{
       display:flex;
@@ -43,18 +43,32 @@ body {
     text-align: center;
     font-size: 50px;
     font-weight: bold;
+    color: white;
     padding: 10px;
-    margin-left: 90px;
-    background-color: white;
+    margin-left: 65%;
+    background-color: rgb(0, 0, 0);
     border-radius: 10px;
     display: block;
     text-align: center;
     width: 200px;
+    margin-top: -530px;
+    margin-bottom: 530px;
   }
-  .contentDetails {
-    background-color: rgb(247, 245, 245);
-    padding: 35px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
+  h2 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    margin-left: 65%;
+    border-radius: 10px;
+    display: flex;
+    text-align: center;
+    width: 200px;
+    margin-top: -480px;
+    margin-bottom: 480px;
   }
-  
+  .pokemonContent {
+    background-color: white;
+    display: flex;
+  }
